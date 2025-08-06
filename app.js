@@ -20,7 +20,8 @@ document.addEventListener("keypress",function(){
 function gameFlash(btn){
     btn.classList.add("flash");
     setTimeout(function(){
-        btn.classList.remove("flash");},200);
+        btn.classList.remove("flash");
+    },200);
 
 }
 
@@ -28,7 +29,7 @@ function userFlash(btn){
     btn.classList.add("userflash");
     setTimeout(function(){
         btn.classList.remove("userFlash");
-     },250)
+     },250):
 }
 
 
@@ -60,4 +61,5 @@ function btnPress() {
 let allBtns = document.querySelectorAll(".btn");
 for(btn of allBtns){
     btn.addEventListener("click",btnPress);
+
 }
