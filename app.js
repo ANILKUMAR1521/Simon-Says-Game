@@ -26,7 +26,7 @@ function gameFlash(btn){
 }
 
 function userFlash(btn){
-    btn.classList.add("userflash");
+    btn.classList.add("userFlash");
     setTimeout(function(){
         btn.classList.remove("userFlash");
      },250):
@@ -63,3 +63,4 @@ for(btn of allBtns){
     btn.addEventListener("click",btnPress);
 
 }
+
